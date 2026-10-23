@@ -1,0 +1,8 @@
+# Pinned to exact versions so results are reproducible: a different
+# xgboost or scikit-learn version can shift metrics slightly.
+pandas==3.1.0
+networkx==3.6.1
+scikit-learn==1.9.1
+xgboost==3.2.0
+matplotlib==3.11.2
+pytest==9.1.1

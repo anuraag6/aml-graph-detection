@@ -17,9 +17,11 @@ Laundering is rare, so accuracy doesn't tell you much. Models are compared on:
 ## Layout
 
 ```
-src/        library code
+src/aml/    library code: loading, graph, rules, features, models
 tests/      pytest tests
 notebooks/  exploration only
+app/        dashboard
+results/    metrics tables, charts
 data/       datasets (gitignored, never committed)
 ```
 
@@ -28,7 +30,9 @@ data/       datasets (gitignored, never committed)
 Requires Python 3.11.
 
 ```bash
+brew install python@3.11 libomp   # macOS: libomp is required by xgboost
 python3.11 -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
 pytest
 ```

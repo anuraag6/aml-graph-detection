@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+# Code lives in src/aml (the "src layout"), which isn't on Python's import
+# path by default. This lets tests `import aml` without installing the package.
+pythonpath = ["src"]
+testpaths = ["tests"]
