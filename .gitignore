@@ -1,0 +1,40 @@
+# Data files must never be committed (see CLAUDE.md)
+data/
+
+# Python build/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Notebook autosave checkpoints
+.ipynb_checkpoints/
+
+# Testing / coverage
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Packaging
+build/
+dist/
+
+# Environment & secrets
+.env
+
+# Model artifacts and experiment outputs (can be large; regenerate from code)
+models/
+*.pt
+*.pkl
+mlruns/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
