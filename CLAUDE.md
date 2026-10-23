@@ -5,6 +5,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # AML Graph Detection
 
 - Goal: detect money laundering in transaction graphs, comparing three approaches: rules vs XGBoost vs GNN
+- Task: transaction (edge) classification. Each prediction is one transaction, scored against its `is_laundering` label
+  - Chosen because the dataset labels transactions, not accounts; account-level labels would have to be derived
+  - All three approaches must output a score per transaction, so their metrics are directly comparable
+  - Metrics count transactions: a false positive is one flagged transaction (one alert)
 - Python 3.11; code in `src/`, tests in `tests/`, notebooks only for exploration
 - Use pytest for tests; run them before every commit
 - Never commit data files (`data/` is gitignored)
