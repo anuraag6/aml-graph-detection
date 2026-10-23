@@ -1,6 +1,7 @@
 # Pinned to exact versions so results are reproducible: a different
 # xgboost or scikit-learn version can shift metrics slightly.
 pandas==3.1.0
+pyarrow==26.0.0  # parquet engine for pandas
 networkx==3.6.1
 scikit-learn==1.9.1
 xgboost==3.2.0
